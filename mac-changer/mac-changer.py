@@ -72,7 +72,7 @@ after_change_mac = check_mac(option.interface)
 
 
 if before_change_mac != after_change_mac:
-    print('[+] Mac successfully changed to  ' + before_change_mac)
+    print('[+] Mac successfully changed to  ' + after_change_mac)
     
 else:
     print('[-] Sorry Mac has not been changed to similarity to original Mac')
