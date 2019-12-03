@@ -32,7 +32,7 @@ def printing(result_scan):
 
 def scan_arguments():
     #create an instance of Argumentparse
-    parser = argparse.ArgumentParser()
+    parser = argparse.ArgumentParser(prog = 'network scanner')
 
     parser.add_argument('-t', '--target', dest='ip', help='This allows you to choose an ip range')
     args = parser.parse_args()
