@@ -32,6 +32,8 @@ def mac_changer(interface, mac):
 
 
 
+#add randomization to the mac  
+
 def mac_changer_arguments():
 
     parse = optparse.OptionParser()
@@ -46,6 +48,17 @@ def mac_changer_arguments():
         parse.error('[-] please enter an mac before proceeding --help for more information')
     else:
         return (option, arguments)
+
+
+# def mac_randomization(random_mac):
+
+#     parser = optparse.OptionParser()
+
+#     parser.add_option('-m ', '--random', dest= 'random' , help='This can be used to auto generate a random mac')
+
+#     (option, arguments) = parser.parse_args()
+
+
 
 
 
